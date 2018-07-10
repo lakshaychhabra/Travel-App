@@ -14,7 +14,23 @@ class TripFunctions {
     static func createTrip(tripModel : TripModal){
         
     }
-    static func readTrip(){
+    static func readTrip(completion: @escaping () -> ()){
+        
+        DispatchQueue.global(qos: .userInteractive).async {
+            if Data.tripModels.count == 0 {
+                Data.tripModels.append(TripModal(title: "Trip To Bali"))
+                Data.tripModels.append(TripModal(title: "India"))
+                Data.tripModels.append(TripModal(title: "Iceland"))
+            }
+            DispatchQueue.main.async {
+                completion()
+            }
+            
+        }
+            
+        
+       
+        
         
     }
     static func updateTrip(tripModel : TripModal){
