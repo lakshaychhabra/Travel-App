@@ -13,6 +13,8 @@
 		3A4B1C7E20F4D66B00DEC9CB /* TripModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B1C7D20F4D66B00DEC9CB /* TripModal.swift */; };
 		3A4B1C8020F4D67400DEC9CB /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B1C7F20F4D67400DEC9CB /* TripFunctions.swift */; };
 		3A4B1C8220F4D7FB00DEC9CB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B1C8120F4D7FB00DEC9CB /* Data.swift */; };
+		3A4B1C8420F4DF1E00DEC9CB /* TripsViewControllerStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A4B1C8320F4DF1E00DEC9CB /* TripsViewControllerStoryBoard.storyboard */; };
+		3A4B1C8620F4DF4A00DEC9CB /* TripViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4B1C8520F4DF4A00DEC9CB /* TripViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3A4B1C7D20F4D66B00DEC9CB /* TripModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModal.swift; sourceTree = "<group>"; };
 		3A4B1C7F20F4D67400DEC9CB /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 		3A4B1C8120F4D7FB00DEC9CB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		3A4B1C8320F4DF1E00DEC9CB /* TripsViewControllerStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewControllerStoryBoard.storyboard; sourceTree = "<group>"; };
+		3A4B1C8520F4DF4A00DEC9CB /* TripViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				3A4B1C7B20F4D64E00DEC9CB /* Modals */,
+				3A4B1C8820F4DF6D00DEC9CB /* Views */,
 				3A4B1C6920F4CE3D00DEC9CB /* AppDelegate.swift */,
 				3A4B1C7020F4CE4000DEC9CB /* Assets.xcassets */,
 				3A4B1C7220F4CE4000DEC9CB /* LaunchScreen.storyboard */,
@@ -69,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				3A4B1C7C20F4D65A00DEC9CB /* Trip */,
-				3A4B1C8120F4D7FB00DEC9CB /* Data.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -79,8 +83,26 @@
 			children = (
 				3A4B1C7D20F4D66B00DEC9CB /* TripModal.swift */,
 				3A4B1C7F20F4D67400DEC9CB /* TripFunctions.swift */,
+				3A4B1C8120F4D7FB00DEC9CB /* Data.swift */,
 			);
 			path = Trip;
+			sourceTree = "<group>";
+		};
+		3A4B1C8720F4DF5900DEC9CB /* TripViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A4B1C8320F4DF1E00DEC9CB /* TripsViewControllerStoryBoard.storyboard */,
+				3A4B1C8520F4DF4A00DEC9CB /* TripViewViewController.swift */,
+			);
+			path = TripViewController;
+			sourceTree = "<group>";
+		};
+		3A4B1C8820F4DF6D00DEC9CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A4B1C8720F4DF5900DEC9CB /* TripViewController */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +165,7 @@
 			files = (
 				3A4B1C7420F4CE4000DEC9CB /* LaunchScreen.storyboard in Resources */,
 				3A4B1C7120F4CE4000DEC9CB /* Assets.xcassets in Resources */,
+				3A4B1C8420F4DF1E00DEC9CB /* TripsViewControllerStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4B1C7E20F4D66B00DEC9CB /* TripModal.swift in Sources */,
+				3A4B1C8620F4DF4A00DEC9CB /* TripViewViewController.swift in Sources */,
 				3A4B1C6A20F4CE3D00DEC9CB /* AppDelegate.swift in Sources */,
 				3A4B1C8020F4D67400DEC9CB /* TripFunctions.swift in Sources */,
 				3A4B1C8220F4D7FB00DEC9CB /* Data.swift in Sources */,
