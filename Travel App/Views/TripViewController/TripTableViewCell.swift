@@ -17,11 +17,14 @@ class TripTableViewCell: UITableViewCell {
         // Initialization code
         
         cardView.addShadowAndRoundedCorner()
-        cardView.backgroundColor = Theme.accent
-        titleLabel.font = UIFont(name: Theme.mainFontName, size: 32)
+
+        titleLabel.font = UIFont(name: Theme.currentTheme.mainFontName, size: 32)
     }
     func setup(tripModel: TripModal){
         titleLabel.text = tripModel.title
+        cardView.backgroundColor = Theme.currentTheme.accent
+        titleLabel.textColor = Theme.currentTheme.fontColorInDark
+        
     }
 
 

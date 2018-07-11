@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        if UserDefaults.standard.object(forKey: "LightTheme") != nil {
+        Theme.currentTheme = UserDefaults.standard.bool(forKey: "LightTheme") ? LightTheme() : DarkTheme()
+        }
         // Override point for customization after application launch.
         return true
     }

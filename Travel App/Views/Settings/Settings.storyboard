@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q3v-6K-F8J">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="nTd-12-sh5">
+            <objects>
+                <viewController title="Settings" id="q3v-6K-F8J" customClass="SettingViewController" customModule="Travel_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Viw-bM-8Qv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFL-Nk-vUQ">
+                                <rect key="frame" x="10" y="30" width="355" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Theme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmq-Cm-dZ6">
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfB-sc-Alg">
+                                        <rect key="frame" x="306" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="themeChanged:" destination="q3v-6K-F8J" eventType="valueChanged" id="fk4-za-9ba"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cFL-Nk-vUQ" firstAttribute="leading" secondItem="nxi-nO-TPy" secondAttribute="leading" constant="10" id="OfA-07-WqF"/>
+                            <constraint firstItem="cFL-Nk-vUQ" firstAttribute="top" secondItem="nxi-nO-TPy" secondAttribute="top" constant="10" id="SeS-Mb-Ick"/>
+                            <constraint firstItem="nxi-nO-TPy" firstAttribute="trailing" secondItem="cFL-Nk-vUQ" secondAttribute="trailing" constant="10" id="xyn-vY-PM4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nxi-nO-TPy"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonSwitch" destination="AfB-sc-Alg" id="La6-Cj-ZJE"/>
+                        <outlet property="lightThemeLabel" destination="Nmq-Cm-dZ6" id="xxL-5Q-aqX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4E6-uP-1Q6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1666" y="180"/>
+        </scene>
+    </scenes>
+</document>

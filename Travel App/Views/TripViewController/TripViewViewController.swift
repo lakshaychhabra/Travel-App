@@ -19,13 +19,19 @@ class TripViewViewController: UIViewController {
             //completion
             self?.tableView.reloadData()
         })
-        view.backgroundColor = Theme.background
-        addButton.backgroundColor = Theme.tint
+        view.backgroundColor = Theme.currentTheme.background
+        addButton.backgroundColor = Theme.currentTheme.tint
         addButton.layer.cornerRadius = addButton.frame.height / 2
         addButton.layer.shadowOpacity = 0.25
         addButton.layer.shadowRadius = 5
         addButton.layer.shadowOffset = CGSize(width: 0, height: 10)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.backgroundColor = Theme.currentTheme.background
+        tableView.reloadData()
     }
 }
 extension TripViewViewController: UITableViewDelegate, UITableViewDataSource{
