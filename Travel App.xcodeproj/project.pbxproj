@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A159A1521049B3A008D8FEB /* AddTrip.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A159A1421049B3A008D8FEB /* AddTrip.storyboard */; };
+		3A159A1821049B75008D8FEB /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A159A1721049B75008D8FEB /* AddTripViewController.swift */; };
+		3A159A1B21049E07008D8FEB /* PopupUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A159A1A21049E07008D8FEB /* PopupUIView.swift */; };
+		3A159A1D2104A47C008D8FEB /* AppUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A159A1C2104A47C008D8FEB /* AppUIButton.swift */; };
 		3A1D510D20F60C3700FB0D10 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D510C20F60C3700FB0D10 /* ThemeProtocol.swift */; };
 		3A1D510F20F60D7D00FB0D10 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D510E20F60D7D00FB0D10 /* LightTheme.swift */; };
 		3A1D511120F60D8F00FB0D10 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1D511020F60D8F00FB0D10 /* DarkTheme.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A159A1421049B3A008D8FEB /* AddTrip.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTrip.storyboard; sourceTree = "<group>"; };
+		3A159A1721049B75008D8FEB /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		3A159A1A21049E07008D8FEB /* PopupUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupUIView.swift; sourceTree = "<group>"; };
+		3A159A1C2104A47C008D8FEB /* AppUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIButton.swift; sourceTree = "<group>"; };
 		3A1D510C20F60C3700FB0D10 /* ThemeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
 		3A1D510E20F60D7D00FB0D10 /* LightTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
 		3A1D511020F60D8F00FB0D10 /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
@@ -61,6 +69,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A159A1621049B5A008D8FEB /* Add Trips */ = {
+			isa = PBXGroup;
+			children = (
+				3A159A1421049B3A008D8FEB /* AddTrip.storyboard */,
+				3A159A1721049B75008D8FEB /* AddTripViewController.swift */,
+			);
+			path = "Add Trips";
+			sourceTree = "<group>";
+		};
+		3A159A1921049DED008D8FEB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A159A1A21049E07008D8FEB /* PopupUIView.swift */,
+				3A159A1C2104A47C008D8FEB /* AppUIButton.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		3A1D510B20F60BFE00FB0D10 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +118,8 @@
 		3A1EC43C20F50B260088DC7E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3A159A1921049DED008D8FEB /* Custom Views */,
+				3A1EC43920F508A40088DC7E /* Extensions */,
 				3A1D510B20F60BFE00FB0D10 /* Themes */,
 				3A1EC43F20F50BB20088DC7E /* Gabriola.ttf */,
 				3A1EC44120F50D3D0088DC7E /* Colors.xcassets */,
@@ -119,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				3A1EC43C20F50B260088DC7E /* Resources */,
-				3A1EC43920F508A40088DC7E /* Extensions */,
 				3A4B1C7B20F4D64E00DEC9CB /* Modals */,
 				3A4B1C8820F4DF6D00DEC9CB /* Views */,
 				3A4B1C6920F4CE3D00DEC9CB /* AppDelegate.swift */,
@@ -161,6 +188,7 @@
 		3A4B1C8820F4DF6D00DEC9CB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3A159A1621049B5A008D8FEB /* Add Trips */,
 				3A1D511620F610A800FB0D10 /* Settings */,
 				3A4B1C8720F4DF5900DEC9CB /* TripViewController */,
 			);
@@ -230,6 +258,7 @@
 				3A1EC44020F50BB20088DC7E /* Gabriola.ttf in Resources */,
 				3A1D511320F6105800FB0D10 /* Settings.storyboard in Resources */,
 				3A4B1C7120F4CE4000DEC9CB /* Assets.xcassets in Resources */,
+				3A159A1521049B3A008D8FEB /* AddTrip.storyboard in Resources */,
 				3A4B1C8420F4DF1E00DEC9CB /* TripsViewControllerStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A159A1821049B75008D8FEB /* AddTripViewController.swift in Sources */,
+				3A159A1D2104A47C008D8FEB /* AppUIButton.swift in Sources */,
+				3A159A1B21049E07008D8FEB /* PopupUIView.swift in Sources */,
 				3A4B1C8A20F4E51B00DEC9CB /* TripTableViewCell.swift in Sources */,
 				3A1EC43E20F50B390088DC7E /* Theme.swift in Sources */,
 				3A1EC43B20F508CD0088DC7E /* UIViewExtensions.swift in Sources */,

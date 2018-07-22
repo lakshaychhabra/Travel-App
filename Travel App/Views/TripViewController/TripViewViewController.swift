@@ -28,6 +28,13 @@ class TripViewViewController: UIViewController {
         
     }
     
+    
+//    @IBAction func addButtonPresses(_ sender: Any) {
+//        
+//        print("Buttonn Pressed")
+//        performSegue(withIdentifier: "toAddTrip", sender: nil)
+//    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         view.backgroundColor = Theme.currentTheme.background
@@ -51,5 +58,6 @@ extension TripViewViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
     }
+    
 
 }
