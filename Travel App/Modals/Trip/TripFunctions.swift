@@ -13,7 +13,9 @@ class TripFunctions {
     
     static func createTrip(tripModel : TripModal){
         
+        Data.tripModels.append(tripModel)
     }
+    
     static func readTrip(completion: @escaping () -> ()){
         
         DispatchQueue.global(qos: .userInteractive).async {
@@ -34,6 +36,7 @@ class TripFunctions {
         
     }
     static func updateTrip(tripModel : TripModal){
+        
         
     }
     static func deleteTrip(tripModel : TripModal){

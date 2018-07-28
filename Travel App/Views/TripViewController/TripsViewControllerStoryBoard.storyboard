@@ -63,7 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="plus"/>
                                 <connections>
-                                    <segue destination="pLo-BT-aeq" kind="presentation" id="MDP-wR-pst"/>
+                                    <segue destination="pLo-BT-aeq" kind="presentation" identifier="toAddTrip" id="MDP-wR-pst"/>
                                 </connections>
                             </button>
                         </subviews>

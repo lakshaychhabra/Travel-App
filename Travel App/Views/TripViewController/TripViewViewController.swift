@@ -28,12 +28,16 @@ class TripViewViewController: UIViewController {
         
     }
     
-    
-//    @IBAction func addButtonPresses(_ sender: Any) {
-//        
-//        print("Buttonn Pressed")
-//        performSegue(withIdentifier: "toAddTrip", sender: nil)
-//    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toAddTrip"{
+            let popup = segue.destination as! AddTripViewController
+            
+            popup.doneSaving = { [weak self] in
+                self?.tableView.reloadData()
+            }
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
